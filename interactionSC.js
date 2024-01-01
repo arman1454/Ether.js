@@ -108,9 +108,9 @@ const contractInteraction = async()=>{
     // const numInEther = await ethers.utils.formatEther(num);
     console.log(String(num));
 
-    // const contractBalance = await Contract.contractBalance();
-    // const contractBalanceInEther = await ethers.utils.formatEther(contractBalance);
-    // console.log(contractBalanceInEther);
+    const contractBalance = await Contract.contractBalance();
+    const contractBalanceInEther = await ethers.utils.formatEther(contractBalance);
+    console.log(contractBalanceInEther);
     
     // const userBalance = await Contract.accountBalance("0x7DC08052a988f2bC75858BD0767F75C95128E080");
     // const userBalanceInEther = await ethers.utils.formatEther(userBalance);

@@ -108,7 +108,11 @@ useEffect(()=>{
     await provider.send("eth_requestAccounts",[]);
     const signer = provider.getSigner();
     const contract = new ethers.Contract(contractAddress,contractAbi,signer);
-    await contract.setValue(2);
+    // await contract.setValue(2);
+    // await contract.sendEthContract({ value: ethers.utils.parseEther("0.01") });
+    await contract.sendEthUser("0xb4Ed5D683B250A7D10f1609FC64caA1d712A0219", {
+      value: ethers.utils.parseEther("0.01"),
+    });
   }
 
   // writeContract();
