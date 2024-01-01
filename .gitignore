@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# macOS system files
+.DS_Store
+
+# Editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build and compiled files
+build/
+dist/
+*.class
+*.jar
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Compiled Java files
+*.class
+
+# Compiled C/C++ files
+*.o
+*.out
+
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
